@@ -1,0 +1,69 @@
+$primary: #666EE8 !default;
+$secondary: #FFF !default;
+$border-radius: 8px !default;
+$card-spacer-x: 1rem !default;
+
+$box-shadow: 0 2px 6px 0 rgba(69,73,91,0.08) !default;
+$card-border-width: 0 !default;
+$card-cap-bg: #F9FAFD;
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~font-awesome/scss/font-awesome.scss';
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+body {
+    background-color: #F4F5FA;
+}
+
+.cart-visible {
+     opacity: 1;
+ }
+
+.cart-hidden {
+    opacity: 0;
+    transform: translate(0, 10px);
+    z-index: -1;
+}
+
+.cart {
+    position: absolute;
+    right: 15px;
+    top: 56px;
+    transition-duration: 0.2s;
+    width: 500px;
+    @include media-breakpoint-down(md) {
+        width: calc(100% - 30px);
+    }
+}
+
+.navbar {
+    z-index: 100;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    transition-duration: 0.2s;
+}
+
+.overlay-visible {
+    opacity: 1;
+    z-index: 10;
+}
+
+.overlay-hidden {
+    opacity: 0;
+    z-index: -1;
+}
+
+.flex-1 {
+    flex: 1;
+}
