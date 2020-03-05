@@ -49,7 +49,7 @@ class Shop extends Component
     public function render()
     {
         return view('livewire.shop', [
-            'total' => $this->cartService()->total()
+            'total' => $this->cartService()->itemCount()
         ]);
     }
 }

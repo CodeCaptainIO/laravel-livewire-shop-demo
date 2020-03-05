@@ -4,6 +4,10 @@ namespace App\Services;
 
 class ProductService {
 
+    /**
+     * Get all the products. In a real app this would come from the database.
+     * @return array
+     */
     public function getProducts()
     {
         return [
@@ -46,6 +50,11 @@ class ProductService {
         ];
     }
 
+    /**
+     * Get the product for a given SKU
+     * @param $sku
+     * @return mixed
+     */
     public function getProduct($sku)
     {
         return collect($this->getProducts())
