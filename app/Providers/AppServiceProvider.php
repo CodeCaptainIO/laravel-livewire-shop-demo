@@ -15,6 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        // Bind a CartService and a ProductService
         app()->bind(CartService::class, function() {
             return new CartService();
         });
