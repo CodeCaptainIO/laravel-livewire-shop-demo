@@ -9,7 +9,9 @@ class Cart extends Component
 {
 
     public $cart;
-    protected $listeners = ['cart_updated' => 'updateCart'];
+    protected $listeners = [
+        'cart_updated' => 'updateCart'
+    ];
 
     public function updateCart()
     {
@@ -29,6 +31,9 @@ class Cart extends Component
         $this->emit('cart_updated_' . $sku);
     }
 
+    /**
+     * @return CartService
+     */
     public function cartService()
     {
         return app()->make(CartService::class);

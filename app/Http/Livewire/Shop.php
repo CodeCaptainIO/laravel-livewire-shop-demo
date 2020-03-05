@@ -11,8 +11,8 @@ class Shop extends Component
 
     public $products = [];
     protected $listeners = [
-        'cart_updated' => 'updateCart',
-        'cart_amount_updated' => 'updateCart'
+        'cart_updated' => 'updateProducts',
+        'cart_amount_updated' => 'updateProducts'
     ];
 
     public function mount()
@@ -20,7 +20,7 @@ class Shop extends Component
         $this->products = $this->products();
     }
 
-    public function updateCart()
+    public function updateProducts()
     {
         $this->products = $this->products();
     }
@@ -30,11 +30,17 @@ class Shop extends Component
         return $this->productService()->getProducts();
     }
 
+    /**
+     * @return CartService
+     */
     public function cartService()
     {
         return app()->make(CartService::class);
     }
 
+    /**
+     * @return ProductService
+     */
     public function productService()
     {
         return app()->make(ProductService::class);

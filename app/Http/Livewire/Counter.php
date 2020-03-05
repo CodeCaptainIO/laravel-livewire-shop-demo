@@ -23,11 +23,17 @@ class Counter extends Component
         $this->amountToAdd = 1;
     }
 
+    /**
+     * @return CartService
+     */
     public function cartService()
     {
         return app()->make(CartService::class);
     }
 
+    /**
+     * @return ProductService
+     */
     public function productService()
     {
         return app()->make(ProductService::class);
