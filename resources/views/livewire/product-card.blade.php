@@ -1,6 +1,6 @@
 <div>
     <div class="card shadow">
-        <div class="embed-responsive embed-responsive-16by9" style="background-image: url({{ $product["image"] }}); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="embed-responsive embed-responsive-16by9 product-img" style="background-image: url({{ $product["image"] }});">
             <div class="card-img-overlay">
                 @if ($amountInCart > 0)
                     <div class="badge badge-pill badge-primary amount-in-cart">

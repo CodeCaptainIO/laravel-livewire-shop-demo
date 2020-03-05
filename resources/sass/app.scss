@@ -14,6 +14,13 @@ body {
     background-color: #F4F5FA;
 }
 
+// Product image cover, center & no repeat
+.product-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 // Navbar needs appropriate z-index
 .navbar {
     z-index: 100;
