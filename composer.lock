@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9bc689b97260d8185b086cb80c6048d1",
+    "content-hash": "6558f74828bca9ebecac73d90cea4b1a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -733,16 +733,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v7.0.1",
+            "version": "v7.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "708f4da6f2d8afa9093dd696be520526221c1384"
+                "reference": "b93848b43f1564521b3f0605f06a1b392391f6ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/708f4da6f2d8afa9093dd696be520526221c1384",
-                "reference": "708f4da6f2d8afa9093dd696be520526221c1384",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/b93848b43f1564521b3f0605f06a1b392391f6ff",
+                "reference": "b93848b43f1564521b3f0605f06a1b392391f6ff",
                 "shasum": ""
             },
             "require": {
@@ -833,7 +833,7 @@
                 "ext-redis": "Required to use the Redis cache and queue drivers.",
                 "filp/whoops": "Required for friendly error pages in development (^2.4).",
                 "fzaninotto/faker": "Required to use the eloquent factory builder (^1.9.1).",
-                "guzzlehttp/guzzle": "Required to use the Mailgun mail driver and the ping methods on schedules (^6.3|^7.0).",
+                "guzzlehttp/guzzle": "Required to use the HTTP Client, Mailgun mail driver and the ping methods on schedules (^6.3|^7.0).",
                 "laravel/tinker": "Required to use the tinker console command (^2.0).",
                 "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^1.0).",
                 "league/flysystem-cached-adapter": "Required to use the Flysystem cache (^1.0).",
@@ -880,7 +880,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-03-03T14:20:35+00:00"
+            "time": "2020-03-04T22:37:20+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1103,63 +1103,6 @@
                 "storage"
             ],
             "time": "2020-02-05T18:14:17+00:00"
-        },
-        {
-            "name": "livewire/livewire",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/livewire/livewire.git",
-                "reference": "8b328adc6eb53a16dfa978f167256a5240ac7814"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/8b328adc6eb53a16dfa978f167256a5240ac7814",
-                "reference": "8b328adc6eb53a16dfa978f167256a5240ac7814",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/database": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0",
-                "illuminate/support": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0",
-                "illuminate/validation": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0",
-                "php": "^7.1.3",
-                "symfony/http-kernel": "^4.0|^5.0"
-            },
-            "require-dev": {
-                "laravel/framework": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0",
-                "mockery/mockery": "^1.3.1",
-                "orchestra/testbench": "~3.6.0|~3.7.0|~3.8.0|^4.0|^5.0",
-                "phpunit/phpunit": "^7.5.15|^8.4|^9.0",
-                "psy/psysh": "@stable"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Livewire\\LivewireServiceProvider"
-                    ],
-                    "aliases": {
-                        "Livewire": "Livewire\\Livewire"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Livewire\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Caleb Porzio",
-                    "email": "calebporzio@gmail.com"
-                }
-            ],
-            "description": "A front-end framework for Laravel.",
-            "time": "2020-02-27T21:24:55+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3619,16 +3562,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "16e0df47042a42bcc855ec5ec5c5cff26d7b3f78"
+                "reference": "b8dbf7791c81619161270d580a64a30bad41b832"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/16e0df47042a42bcc855ec5ec5c5cff26d7b3f78",
-                "reference": "16e0df47042a42bcc855ec5ec5c5cff26d7b3f78",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/b8dbf7791c81619161270d580a64a30bad41b832",
+                "reference": "b8dbf7791c81619161270d580a64a30bad41b832",
                 "shasum": ""
             },
             "require": {
@@ -3654,6 +3597,9 @@
             },
             "type": "library",
             "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                },
                 "laravel": {
                     "providers": [
                         "Facade\\Ignition\\IgnitionServiceProvider"
@@ -3683,7 +3629,7 @@
                 "laravel",
                 "page"
             ],
-            "time": "2020-03-02T16:10:55+00:00"
+            "time": "2020-03-05T12:32:22+00:00"
         },
         {
             "name": "facade/ignition-contracts",
@@ -4003,16 +3949,16 @@
         },
         {
             "name": "nunomaduro/collision",
-            "version": "v4.1.1",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nunomaduro/collision.git",
-                "reference": "1a7c9c49ece828a02b1118234652ada53c1f840b"
+                "reference": "e81356da90969139c85709f8353e59f1e7d5e01c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/1a7c9c49ece828a02b1118234652ada53c1f840b",
-                "reference": "1a7c9c49ece828a02b1118234652ada53c1f840b",
+                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/e81356da90969139c85709f8353e59f1e7d5e01c",
+                "reference": "e81356da90969139c85709f8353e59f1e7d5e01c",
                 "shasum": ""
             },
             "require": {
@@ -4069,7 +4015,7 @@
                 "php",
                 "symfony"
             ],
-            "time": "2020-02-26T22:38:35+00:00"
+            "time": "2020-03-03T18:17:47+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -4326,16 +4272,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "v1.10.2",
+            "version": "v1.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "b4400efc9d206e83138e2bb97ed7f5b14b831cd9"
+                "reference": "451c3cd1418cf640de218914901e51b064abb093"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/b4400efc9d206e83138e2bb97ed7f5b14b831cd9",
-                "reference": "b4400efc9d206e83138e2bb97ed7f5b14b831cd9",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/451c3cd1418cf640de218914901e51b064abb093",
+                "reference": "451c3cd1418cf640de218914901e51b064abb093",
                 "shasum": ""
             },
             "require": {
@@ -4385,7 +4331,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2020-01-20T15:57:02+00:00"
+            "time": "2020-03-05T15:02:03+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
