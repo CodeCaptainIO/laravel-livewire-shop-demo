@@ -19,21 +19,10 @@ body {
     background-color: #F4F5FA;
 }
 
-.cart-visible {
-     opacity: 1;
- }
-
-.cart-hidden {
-    opacity: 0;
-    transform: translate(0, 10px);
-    z-index: -1;
-}
-
 .cart {
     position: absolute;
     right: 15px;
     top: 56px;
-    transition-duration: 0.2s;
     width: 500px;
     @include media-breakpoint-down(md) {
         width: calc(100% - 30px);
@@ -51,19 +40,32 @@ body {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.25);
-    transition-duration: 0.2s;
-}
-
-.overlay-visible {
-    opacity: 1;
-    z-index: 10;
-}
-
-.overlay-hidden {
-    opacity: 0;
-    z-index: -1;
 }
 
 .flex-1 {
     flex: 1;
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.loader-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    &.white {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.deleting {
+    opacity: 0.5;
 }

@@ -10,8 +10,10 @@ class Shop extends Component
 {
 
     public $products = [];
-    public $cartVisible = false;
-    protected $listeners = ['cart_updated' => 'updateCart'];
+    protected $listeners = [
+        'cart_updated' => 'updateCart',
+        'cart_amount_updated' => 'updateCart'
+    ];
 
     public function mount()
     {
@@ -21,7 +23,6 @@ class Shop extends Component
     public function updateCart()
     {
         $this->products = $this->products();
-        $this->cartVisible = true;
     }
 
     protected function products()

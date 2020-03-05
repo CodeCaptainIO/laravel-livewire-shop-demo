@@ -1,9 +1,9 @@
 // require('./bootstrap');
 import 'alpinejs'
 
-window.promptForAmount = function($dispatch, message) {
+window.promptForAmount = function(message, cb) {
     const number = window.prompt(message);
     if (number && !isNaN(number)) {
-        $dispatch('input', parseInt(number));
+        cb(parseInt(number));
     }
 };

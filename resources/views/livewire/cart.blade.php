@@ -1,4 +1,7 @@
-<div>
+<div class="position-relative">
+    <div class="loader-wrap white" wire:loading.class="d-flex">
+        <i class="fa fa-3x fa-refresh loading-icon fa-spin"></i>
+    </div>
     @if (count($cart) > 0)
         @foreach($cart as $row)
             <div class="p-1 d-flex">

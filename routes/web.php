@@ -14,5 +14,3 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::livewire('/', 'shop');
-Route::livewire('/test', 'test');
-Route::livewire('/counter', 'counter');

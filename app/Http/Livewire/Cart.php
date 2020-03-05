@@ -25,7 +25,7 @@ class Cart extends Component
     {
         $this->cartService()->removeSku($sku);
         $this->updateCart();
-        $this->emit('cart_updated');
+        $this->emit('cart_amount_updated');
         $this->emit('cart_updated_' . $sku);
     }
 
