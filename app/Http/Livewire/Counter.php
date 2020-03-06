@@ -14,7 +14,7 @@ class Counter extends Component
 
     public function set($amount)
     {
-        $this->amountToAdd = $amount;
+        $this->amountToAdd = max(1, $amount);
     }
 
     public function addToCart()
